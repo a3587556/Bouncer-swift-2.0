@@ -14,6 +14,7 @@
 		04C402191B8C43D700FCFD3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C402171B8C43D700FCFD3A /* LaunchScreen.storyboard */; };
 		04C402241B8C43D700FCFD3A /* BouncerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C402231B8C43D700FCFD3A /* BouncerTests.swift */; };
 		04C4022F1B8C43D700FCFD3A /* BouncerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4022E1B8C43D700FCFD3A /* BouncerUITests.swift */; };
+		04C4023D1B8C441A00FCFD3A /* BouncerBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4023C1B8C441A00FCFD3A /* BouncerBehavior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		04C4022A1B8C43D700FCFD3A /* BouncerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BouncerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C4022E1B8C43D700FCFD3A /* BouncerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncerUITests.swift; sourceTree = "<group>"; };
 		04C402301B8C43D700FCFD3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C4023C1B8C441A00FCFD3A /* BouncerBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouncerBehavior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				04C4020E1B8C43D700FCFD3A /* AppDelegate.swift */,
 				04C402101B8C43D700FCFD3A /* ViewController.swift */,
+				04C4023C1B8C441A00FCFD3A /* BouncerBehavior.swift */,
 				04C402121B8C43D700FCFD3A /* Main.storyboard */,
 				04C402151B8C43D700FCFD3A /* Assets.xcassets */,
 				04C402171B8C43D700FCFD3A /* LaunchScreen.storyboard */,
@@ -192,6 +195,7 @@
 				TargetAttributes = {
 					04C4020A1B8C43D700FCFD3A = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = USUSSG24V9;
 					};
 					04C4021E1B8C43D700FCFD3A = {
 						CreatedOnToolsVersion = 7.0;
@@ -257,6 +261,7 @@
 			files = (
 				04C402111B8C43D700FCFD3A /* ViewController.swift in Sources */,
 				04C4020F1B8C43D700FCFD3A /* AppDelegate.swift in Sources */,
+				04C4023D1B8C441A00FCFD3A /* BouncerBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,10 +403,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Bouncer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.5inb4d.Bouncer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -409,10 +418,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Bouncer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.5inb4d.Bouncer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
